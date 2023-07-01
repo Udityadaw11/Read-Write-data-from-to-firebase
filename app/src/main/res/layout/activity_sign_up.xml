@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".SignUp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:text="Welcome! Please Sign Up" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+       >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Name"
+
+            android:background="@drawable/ic_launcher_foreground"
+            android:inputType="textPersonName"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/black"
+            android:drawableRight="@drawable/baseline_person_24"
+            android:layout_marginTop="20dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Email Address"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/ic_launcher_foreground"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:drawableRight ="@drawable/baseline_email_24"
+            android:layout_marginTop="20dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:background="@drawable/ic_launcher_foreground"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:drawableRight="@drawable/baseline_password_24"
+            android:layout_marginTop="20dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/uniqueUserid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Id"
+            android:inputType="text"
+            android:background="@drawable/ic_launcher_foreground"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+
+            android:drawableRight="@drawable/baseline_person_pin_24"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact Number"
+            android:inputType="phone"
+            android:background="@drawable/ic_launcher_foreground"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+
+            android:drawableRight="@drawable/baseline_phone_24"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:text="Sign Up" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+
+            android:text="If already signed up," />
+
+        <TextView
+            android:id="@+id/textLogin"
+            android:layout_width="150dp"
+
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_700"
+            android:text="Click Here" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
