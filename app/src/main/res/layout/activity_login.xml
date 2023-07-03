@@ -23,32 +23,35 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp">
+        android:layout_height="80dp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/uniqueUserid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint=" Email Address"
-            android:inputType="textEmailAddress"
-            android:background="@drawable/ic_launcher_foreground"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:drawableRight ="@drawable/baseline_email_24"
-            android:layout_marginTop="20dp"/>
+            android:hint="User Id"
+            android:inputType="text"
+            android:background="@color/sky_blue"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+
+            android:drawableRight="@drawable/baseline_person_pin_24"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="80dp"
         app:endIconMode="password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter Password"
-            android:background="@drawable/ic_launcher_foreground"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:background="@color/sky_blue"
             android:drawableRight="@drawable/baseline_password_24"
             android:layout_marginTop="20dp"/>
     </com.google.android.material.textfield.TextInputLayout>

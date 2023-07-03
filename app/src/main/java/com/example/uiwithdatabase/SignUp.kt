@@ -10,7 +10,7 @@ import android.widget.Toast
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-
+//store data in database
 class SignUp : AppCompatActivity() {
 
     //create a variable of database reference type
@@ -40,7 +40,7 @@ class SignUp : AppCompatActivity() {
             val userId = etUserId.text.toString()
             val phone = etPhone.text.toString()
 
-            //create an object of data class
+            //create an object of data class User
             val user = User(name, mail, password, userId, phone)
             //the parameters are from set on click listener
 
@@ -58,13 +58,13 @@ class SignUp : AppCompatActivity() {
                 etPhone.text?.clear()
 
                 // to show toast
-                Toast.makeText(this, "User registered successfully", Toast.LENGTH_SHORT)
+                Toast.makeText(this, "User registered successfully", Toast.LENGTH_SHORT).show()
 
                 //after sign up move to login page
                 val intent = Intent(this,Login::class.java)
                 startActivity(intent)
 
-
+                finish()
 
             }
         }
